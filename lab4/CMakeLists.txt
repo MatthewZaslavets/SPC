@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.9)
+set(CMAKE_CXX_COMPILER g++)
+project(lab4)
+add_library(lib4 STATIC Calculator.cpp)
+add_executable(Shrek main.cpp)
+target_link_libraries(Shrek PRIVATE lib4)
